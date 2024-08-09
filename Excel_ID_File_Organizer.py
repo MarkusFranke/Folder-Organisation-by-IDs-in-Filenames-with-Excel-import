@@ -136,7 +136,6 @@ class FileOrganizerApp:
             if id not in matched_ids:
                 unmatched_ids.append(id)
 
-        # Save matched and unmatched IDs and unmatched files to an Excel file
         self.save_report_to_excel(matched_filenames, unmatched_ids, unmatched_files)
 
     def save_report_to_excel(self, matched_filenames, unmatched_ids, unmatched_files):
